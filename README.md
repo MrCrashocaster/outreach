@@ -1,4 +1,4 @@
-# outreach
+# OutReach Major Finder
 
 Senior Project:
 
