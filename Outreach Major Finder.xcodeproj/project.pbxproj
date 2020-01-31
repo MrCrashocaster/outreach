@@ -93,6 +93,7 @@
 		0A026DDA23E40C110090DA45 /* backgroundanswers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundanswers.png; sourceTree = "<group>"; };
 		0A026DDB23E40C110090DA45 /* secPic1 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "secPic1 (1).jpg"; sourceTree = "<group>"; };
 		0A026DDC23E40C110090DA45 /* chitwoodcenter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chitwoodcenter.jpg; sourceTree = "<group>"; };
+		0A1AEA5D23E42A910052CD0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -324,6 +325,7 @@
 		0A7D834123E3AD4200A33317 = {
 			isa = PBXGroup;
 			children = (
+				0A1AEA5D23E42A910052CD0C /* README.md */,
 				0A026D7423E40C100090DA45 /* css */,
 				0A026DD323E40C100090DA45 /* img */,
 				0A026D7B23E40C100090DA45 /* js */,
