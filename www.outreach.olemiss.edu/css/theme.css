@@ -1,5 +1,13 @@
 /* CSSTidy 1.5.2: Mon, 20 Mar 2017 16:29:00 +0000 */
 
+#quiz-picture {
+	width: 100%;
+	margin-bottom: 30px;
+}
+#quiz-text {
+	margin-bottom: 30px;
+}
+
 html {
     direction: ltr;
     overflow-x: hidden;

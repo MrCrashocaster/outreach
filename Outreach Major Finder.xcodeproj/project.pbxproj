@@ -33,9 +33,6 @@
 		0AD4099B23E7D92B0010C1C5 /* theme.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.js; sourceTree = "<group>"; };
 		0AD4099D23E7D92B0010C1C5 /* theme.init.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.init.js; sourceTree = "<group>"; };
 		0AD4099F23E7D92B0010C1C5 /* majorfinder.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = majorfinder.html; sourceTree = "<group>"; };
-		0AD409A123E7D92B0010C1C5 /* eyler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eyler.jpg; sourceTree = "<group>"; };
-		0AD409A223E7D92B0010C1C5 /* banner6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner6.jpg; sourceTree = "<group>"; };
-		0AD409A323E7D92B0010C1C5 /* ADEILLOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ADEILLOGO.jpg; sourceTree = "<group>"; };
 		0AD409A523E7D92B0010C1C5 /* outreachstackedlogofooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outreachstackedlogofooter.png; sourceTree = "<group>"; };
 		0AD409A623E7D92B0010C1C5 /* outreachstackedlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outreachstackedlogo2.png; sourceTree = "<group>"; };
 		0AD409A923E7D92B0010C1C5 /* jquery.appear.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.appear.min.js; sourceTree = "<group>"; };
@@ -126,6 +123,7 @@
 		0AD40A1423E7D92B0010C1C5 /* jquery-cookie.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-cookie.min.js"; sourceTree = "<group>"; };
 		0AD40A1723E7D92B0010C1C5 /* font-awesome.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "font-awesome.min.css"; sourceTree = "<group>"; };
 		0AD40A1923E7D92B0010C1C5 /* fontawesome-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.woff2"; sourceTree = "<group>"; };
+		0AD40A1A23E7E0F90010C1C5 /* olemiss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = olemiss.jpg; path = www.outreach.olemiss.edu/major/img/olemiss.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -271,9 +269,7 @@
 		0AD409A023E7D92B0010C1C5 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				0AD409A123E7D92B0010C1C5 /* eyler.jpg */,
-				0AD409A223E7D92B0010C1C5 /* banner6.jpg */,
-				0AD409A323E7D92B0010C1C5 /* ADEILLOGO.jpg */,
+				0AD40A1A23E7E0F90010C1C5 /* olemiss.jpg */,
 			);
 			path = img;
 			sourceTree = "<group>";
