@@ -365,6 +365,11 @@ p {
     margin: 0 0 20px;
 }
 
+p1 {
+	color: white;
+	font-size: 30px;
+}
+
 p.featured {
     font-size: 1.6em;
     line-height: 1.5em;
