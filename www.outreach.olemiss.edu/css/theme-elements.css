@@ -368,6 +368,7 @@ p {
 p1 {
 	color: white;
 	font-size: 30px;
+	font-weight: bolder;
 }
 
 p.featured {
