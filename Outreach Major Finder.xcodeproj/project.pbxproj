@@ -31,9 +31,8 @@
 		0AD4099823E7D92B0010C1C5 /* theme-blog.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "theme-blog.css"; sourceTree = "<group>"; };
 		0AD4099923E7D92B0010C1C5 /* theme-animate.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "theme-animate.css"; sourceTree = "<group>"; };
 		0AD4099B23E7D92B0010C1C5 /* theme.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.js; sourceTree = "<group>"; };
-		0AD4099C23E7D92B0010C1C5 /* custom.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = custom.js; sourceTree = "<group>"; };
 		0AD4099D23E7D92B0010C1C5 /* theme.init.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.init.js; sourceTree = "<group>"; };
-		0AD4099F23E7D92B0010C1C5 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		0AD4099F23E7D92B0010C1C5 /* majorfinder.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = majorfinder.html; sourceTree = "<group>"; };
 		0AD409A123E7D92B0010C1C5 /* eyler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eyler.jpg; sourceTree = "<group>"; };
 		0AD409A223E7D92B0010C1C5 /* banner6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner6.jpg; sourceTree = "<group>"; };
 		0AD409A323E7D92B0010C1C5 /* ADEILLOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ADEILLOGO.jpg; sourceTree = "<group>"; };
@@ -222,7 +221,7 @@
 			children = (
 				0AD4099123E7D92B0010C1C5 /* css */,
 				0AD4099A23E7D92B0010C1C5 /* js */,
-				0AD4099E23E7D92B0010C1C5 /* adeil */,
+				0AD4099E23E7D92B0010C1C5 /* major */,
 				0AD409A423E7D92B0010C1C5 /* img */,
 				0AD409A723E7D92B0010C1C5 /* vendor */,
 			);
@@ -255,19 +254,18 @@
 			isa = PBXGroup;
 			children = (
 				0AD4099B23E7D92B0010C1C5 /* theme.js */,
-				0AD4099C23E7D92B0010C1C5 /* custom.js */,
 				0AD4099D23E7D92B0010C1C5 /* theme.init.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
 		};
-		0AD4099E23E7D92B0010C1C5 /* adeil */ = {
+		0AD4099E23E7D92B0010C1C5 /* major */ = {
 			isa = PBXGroup;
 			children = (
-				0AD4099F23E7D92B0010C1C5 /* index.html */,
+				0AD4099F23E7D92B0010C1C5 /* majorfinder.html */,
 				0AD409A023E7D92B0010C1C5 /* img */,
 			);
-			path = adeil;
+			path = major;
 			sourceTree = "<group>";
 		};
 		0AD409A023E7D92B0010C1C5 /* img */ = {
