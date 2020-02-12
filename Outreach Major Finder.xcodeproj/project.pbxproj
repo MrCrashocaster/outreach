@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		0A1AEA5D23E42A910052CD0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0A6F0EB323F4B84400B364F4 /* quiz.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = quiz.js; sourceTree = "<group>"; };
 		0AD4097D23E7D92B0010C1C5 /* UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD55TecYQ.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD55TecYQ.woff2; sourceTree = "<group>"; };
 		0AD4098023E7D92B0010C1C5 /* mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2"; sourceTree = "<group>"; };
 		0AD4098123E7D92B0010C1C5 /* mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2"; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 			children = (
 				0AD4099B23E7D92B0010C1C5 /* theme.js */,
 				0AD4099D23E7D92B0010C1C5 /* theme.init.js */,
+				0A6F0EB323F4B84400B364F4 /* quiz.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
