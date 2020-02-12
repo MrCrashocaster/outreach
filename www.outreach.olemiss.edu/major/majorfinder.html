@@ -21,6 +21,7 @@
 				<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css"/>
 				
 				<!-- Vendor CSS -->
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 				<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css"/>
 				<link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css"/>
 				<link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.min.css"/>
@@ -288,102 +289,100 @@
 				</section>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 mr-lg">
-							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options='{"minWidth": 991, "containerSelector": ".container", "padding": {"top": 90}}'>
-								<h4 class="heading-primary">Want More Information?</h4>
-								<ul class="nav nav-list mb-xl show-bg-active">
-									<form>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="inputEmail4">Email</label>
-												<input type="email" class="form-control" id="inputEmail4">
-													</div>
-											<div class="form-group col-md-6">
-												<label for="inputPassword4">Password</label>
-												<input type="password" class="form-control" id="inputPassword4">
-													</div>
-										</div>
-										<div class="form-group">
-											<label for="inputAddress">Address</label>
-											<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-												</div>
-										<div class="form-group">
-											<label for="inputAddress2">Address 2</label>
-											<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-												</div>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="inputCity">City</label>
-												<input type="text" class="form-control" id="inputCity">
-													</div>
-											<div class="form-group col-md-4">
-												<label for="inputState">State</label>
-												<select id="inputState" class="form-control">
-													<option selected>Choose...</option>
-													<option>...</option>
-												</select>
-											</div>
-											<div class="form-group col-md-2">
-												<label for="inputZip">Zip</label>
-												<input type="text" class="form-control" id="inputZip">
-													</div>
-										</div>
-										
-										<button type="submit" class="btn btn-primary">Submit</button>
-									</form>
-									</aside>
-						</div>
+						
+						
 						<div class="col-md-8 mb-lg">
 							
-							<section class="quiz">
-
-								<!-- current question displayed to the user -->
-								<div id="quiz__question" class="quiz__question quiz__wrap">
-									<div class="quiz__question-transition-wrap">
-										<!-- Question -->
-										<p id="quiz__question-text" class="quiz__question-text quiz__p">I like to experiment with better and faster ways of doing things.</p>
-										<!-- Yes -->
-										<input type="radio" class="quiz__question-radio" name="quiz__question-radio" id="quiz__question-radio--yes">
-										<label class="quiz__question-label button button--strong" for="quiz__question-radio--yes">Yes</label>
-										<!-- No -->
-										<input type="radio" class="quiz__question-radio" name="quiz__question-radio" id="quiz__question-radio--no">
-										<label class="quiz__question-label button" for="quiz__question-radio--no">No</label>
-									</div>
-									<!-- prev/next -->
-									<button id="quiz__button--prev" class="quiz__button quiz__button--prev button button--gray hide">‹</button>
-									<button id="quiz__button--next" class="quiz__button button button--gray">›</button>
-									<!-- 1/30 -->
-									<div id="quiz__question-count" class="quiz__question-count">1 / 26</div>
-								</div>
-
-								<!-- results of quiz -->
-								<div id="quiz__results" class="quiz__results quiz__wrap hide">
-									<div id="quiz__results-text" class="quiz__results-text"></div>
-									<button id="quiz__button--return-to-questions" class="quiz__button quiz__button--return-to-questions button button--gray">‹ Return to Questions</button>
+							<div class="card text-center">
+							  <h5 class="card-header">Major Finder</h5>
+							  <img src="img/major.jpg" class="card-img-top" alt="...">
+							  <div class="card-body">
+								<section class="quiz">
 									
-							<script>
-								gc.load('sharebuttons', '/wp-content/themes/timber-gc/js/dist/share-buttons.min.js?cache=1525070449')
-								.then(function ()
-								{
-									gc.setupShareButtons('share--1687922050');
-								})
-								.catch(function (err) {
-									console.error('Unable to setup share buttons. Hiding them.', err);
-									document.getElementById('share--1687922050').classList.add('hide');
-								});
-							</script>
-								</div>
-
-								<!-- loading message -->
-								<p id="quiz__loading-chart" style="display: none;">Loading interactive graph...</p>
-
-								<!-- ChartJS chart -->
-								<div class="quiz__chart-outer-wrap">
-									<div class="quiz__chart-inner-wrap">
-										<canvas id="quiz__chart" width="1400" height="1088" style="width: 700px; height: 544px;"></canvas>
+									<!-- current question displayed to the user -->
+									<div id="quiz__question" class="quiz__question quiz__wrap">
+										<div class="quiz__question-transition-wrap">
+											<!-- Question -->
+											<p id="quiz__question-text" class="quiz__question-text quiz__p">I like to experiment with better and faster ways of doing things.</p>
+											<!-- Yes -->
+											<input type="radio" class="quiz__question-radio" name="quiz__question-radio" id="quiz__question-radio--yes">
+												<label class="quiz__question-label button button--strong" for="quiz__question-radio--yes">Yes</label>
+												<!-- No -->
+												<input type="radio" class="quiz__question-radio" name="quiz__question-radio" id="quiz__question-radio--no">
+													<label class="quiz__question-label button" for="quiz__question-radio--no">No</label>
+													</div>
+										<!-- prev/next -->
+										<button id="quiz__button--prev" class="quiz__button quiz__button--prev button button--gray hide">‹</button>
+										<button id="quiz__button--next" class="quiz__button button button--gray">›</button>
+										<!-- 1/30 -->
+										<div id="quiz__question-count" class="quiz__question-count">1 / 26</div>
 									</div>
-								</div>
-							</section>
+									
+									<!-- results of quiz -->
+									<div id="quiz__results" class="quiz__results quiz__wrap hide">
+										<div id="quiz__results-text" class="quiz__results-text"></div>
+										<button id="quiz__button--return-to-questions" class="quiz__button quiz__button--return-to-questions button button--gray">‹ Return to Questions</button>
+										
+										<script>
+											gc.load('sharebuttons', '/wp-content/themes/timber-gc/js/dist/share-buttons.min.js?cache=1525070449')
+											.then(function ()
+												  {
+												  gc.setupShareButtons('share--1687922050');
+												  })
+												  .catch(function (err) {
+														 console.error('Unable to setup share buttons. Hiding them.', err);
+														 document.getElementById('share--1687922050').classList.add('hide');
+														 });
+											</script>
+									</div>
+								
+								</section>
+								
+							  </div>
+							 
+							</div>
+							
+							
+						</div>
+						
+						<div class="col-md-3 mr-lg">
+							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options='{"minWidth": 991, "containerSelector": ".container", "padding": {"top": 90}}'>
+								
+								<form>
+								 <div class="form-group">
+								   <label for="inputAddress">Full Name</label>
+								   <input type="text" class="form-control" id="inputAddress" placeholder="Dr. Who">
+								  </div>
+								  <div class="form-group">
+									<label for="inputAddress">Address</label>
+									<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+								  </div>
+								  <div class="form-group">
+									<label for="inputAddress2">Address 2</label>
+									<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="inputCity">City</label>
+									  <input type="text" class="form-control" id="inputCity">
+									</div>
+									<div class="form-group col-md-4">
+									  <label for="inputState">State</label>
+									  <select id="inputState" class="form-control">
+										<option selected>Choose...</option>
+										<option>...</option>
+									  </select>
+									</div>
+									<div class="form-group col-md-2">
+									  <label for="inputZip">Zip</label>
+									  <input type="text" class="form-control" id="inputZip">
+									</div>
+								  </div>
+								  
+								  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+								
+									</aside>
 						</div>
 					</div>
 				</div>
@@ -393,8 +392,6 @@
 							<div class="col-md-12 center">
 								<div class="row">
 									<div class="col-md-12 center">
-										
-										
 										
 										
 										
@@ -449,6 +446,9 @@
 			</div>
 			
 			<!-- Vendor -->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 			<script src="../vendor/jquery/jquery.min.js"></script>
 			<script src="../vendor/jquery.appear/jquery.appear.min.js"></script>
 			<script src="../vendor/jquery.easing/jquery.easing.min.js"></script>
