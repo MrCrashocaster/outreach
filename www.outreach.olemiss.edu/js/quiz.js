@@ -364,59 +364,6 @@
 		questionContainer.classList.remove('hide');
 	});
 
-	// load jQuery and setup click handlers
-	gc.scripts.jquery.then(function()
-	{
-		// load ChartJS library and display the chart
-		// gc.load('chartjs', 'https://www.goshen.edu/js/Chart.min.js').then(function()
-		// {
-		loadChartJS();
-
-		// fade out loading message
-		document.getElementById('quiz__loading-chart').style.display = 'none';
-
-		// Set up the data for the radar chart
-		var data = {
-			labels: sortedMajors,
-			datasets: [{
-				label: "Majors",
-				fillColor: "rgba(139, 105, 166, .5)",
-				strokeColor: "rgb(139, 105, 166)",
-				pointColor: "rgb(73, 23, 110)",
-
-				// This array holds the point value for each major
-				data: sortedMajors.map( function(majorName)
-					{
-						return majors[ majorName ].score;
-					})
-			}]
-		};
-
-		// Set up options for the radar chart
-		var options = {
-			scaleShowGridLines : false,
-			responsive: true,
-			showTooltips: false,
-			pointLabelFontSize: 12,
-
-			// Boolean - If we want to override with a hard coded scale
-			scaleOverride: true,
-
-			// ** Required if scaleOverride is true **
-			// Number - The number of steps in a hard coded scale
-			scaleSteps: 4,
-			// Number - The value jump in the hard coded scale
-			scaleStepWidth: 1,
-			// Number - The scale starting value
-			scaleStartValue: 0,
-		};
-
-		// initialize chart
-		var chartContext = document.getElementById('quiz__chart').getContext('2d');
-		chart = new Chart(chartContext).Radar(data, options);
-	// });
-	});
-
 	function radioListener( evt )
 	{
 		// answer question with a yes or no
@@ -618,12 +565,10 @@
 		}
 	}
 
-	/**
-	 * Taken from stackoverflow
-	 * http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
-	 * Shuffles array in place.
-	 * @param {Array} a items The array containing the items.
-	 */
+	
+	 // Shuffles array in place.
+	 // @param {Array} a items The array containing the items.
+	 
 	function shuffle(a) {
 		var j, x, i;
 		for (i = a.length; i; i -= 1) {
