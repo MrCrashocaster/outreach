@@ -20,7 +20,7 @@
 		{
 			text: "I have a strong interest and ability in visual art.",
 			answer: "",
-			majors: ["Art", "Film Production"],
+			majors: ["Art", "Theater"],
 		},{
 			text: "I'm interested in graphic and/or Web design.",
 			answer: "",
@@ -329,7 +329,7 @@
 		},
 	};
 
-	// sort the major naems to use as labels on the graph
+	// sort the major names to use as labels on the graph
 	var sortedMajors = Object.keys( majors );
 
 	// for each major, calculate how many associated questions it has
