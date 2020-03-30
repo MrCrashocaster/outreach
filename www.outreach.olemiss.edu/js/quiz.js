@@ -557,14 +557,6 @@
 		goToQuestion( currentQuestionIndex - 1 );
 	}
 
-	// Fire Google Analytics upon first quiz completion
-	function trackCompletion()
-	{
-		if ( window.dataLayer ) {
-			dataLayer.push({ 'event': 'Quiz Completion: What should you major in?' });
-		}
-	}
-
 	
 	 // Shuffles array in place.
 	 // @param {Array} a items The array containing the items.
