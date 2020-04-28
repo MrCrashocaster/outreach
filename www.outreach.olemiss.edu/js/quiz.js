@@ -16,6 +16,8 @@
 		chart = null;
 
 	// mapping between questions & majors they increment
+
+	// **** ONLY ADD OR CHANGE NECESSARY QUESTIONS ****
 	var questions = [
 		{
 			text: "I have a strong interest and ability in visual art.",
@@ -126,6 +128,9 @@
 	shuffle(questions);
 
 	// mappings between each major and their url, score, and associated question count
+
+	// **** ONLY ADD OR CHANGE NECESSARY MAJORS ****
+
 	var majors = {
 		'History': {
 			url: 'https://history.olemiss.edu',
