@@ -39,7 +39,7 @@
 		},{
 			text: "I'm interested in intellectual ideas, including those that are philosophical or religious.",
 			answer: "",
-			majors: ["Religion", "English", "History", "Sociology"],
+			majors: ["Religious Studies", "English", "History", "Sociology"],
 		},{
 			text: "I enjoy performing as an actor, or working behind the scenes on theatrical productions.",
 			answer: "",
@@ -75,7 +75,7 @@
 		},{
 			text: "I enjoy helping people.",
 			answer: "",
-			majors: ["Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religion"],
+			majors: ["Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religious Studies"],
 		},{
 			text: "I'm good with numbers and am detail-oriented.",
 			answer: "",
@@ -131,7 +131,7 @@
 		},{
 			text: "I like to offer advice to others.",
 			answer: "",
-			majors: ["Psychology", "Social Work", "Religion", "Elementary Education"],
+			majors: ["Psychology", "Social Work", "Religious Studies", "Elementary Education"],
 		}
 	];
 	shuffle(questions);
@@ -147,67 +147,67 @@
 			questions: 0,
 		},
 		'Environmental Studies': {
-			url: '/academics/environmental-marine-science/?gc_source=majorquiz',
+			url: 'https://environmentalstudies.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Molecular Biology/Biochemistry': {
-			url: '/academics/molecular-biology-biochemistry/?gc_source=majorquiz',
+			url: 'https://biology.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Chemistry': {
-			url: '/academics/chemistry/?gc_source=majorquiz',
+			url: 'https://chemistry.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Biology': {
-			url: '/academics/biology/?gc_source=majorquiz',
+			url: 'https://biology.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Nursing': {
-			url: '/academics/nursing/?gc_source=majorquiz',
+			url: 'https://olemiss.edu/academics/programs/liberal-arts/bs-nursz',
 			score: averageScore,
 			questions: 0,
 		},
 		'Exercise Science': {
-			url: '/academics/exercise-science/?gc_source=majorquiz',
+			url: 'https://hesrm.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Psychology': {
-			url: '/academics/psychology/?gc_source=majorquiz',
+			url: 'https://psychology.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Social Work': {
-			url: '/academics/social-work/?gc_source=majorquiz',
+			url: 'https://sw.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
-		'Religion': {
-			url: '/academics/bible-and-religion/?gc_source=majorquiz',
+		'Religious Studies': {
+			url: 'https://religion.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Physical Education': {
-			url: '/academics/physical-education/?gc_source=majorquiz',
+			url: 'http://education.olemiss.edu/academics/programs/health_physical_ed_bae.html',
 			score: averageScore,
 			questions: 0,
 		},
 		'Elementary Education': {
-			url: '/academics/elementary-education/?gc_source=majorquiz',
+			url: 'http://education.olemiss.edu/academics/programs/elementary_ed_bae.html',
 			score: averageScore,
 			questions: 0,
 		},
 		'Secondary Education': {
-			url: '/academics/secondary-education/?gc_source=majorquiz',
+			url: 'http://education.olemiss.edu/academics/programs/secondary_ed_english_bae.html',
 			score: averageScore,
 			questions: 0,
 		},
 		'TESOL': {
-			url: '/academics/tesol/?gc_source=majorquiz',
+			url: 'https://modernlanguages.olemiss.edu/tesol/',
 			score: averageScore,
 			questions: 0,
 		},
@@ -217,12 +217,12 @@
 			questions: 0,
 		},
 		'English': {
-			url: '/academics/english/?gc_source=majorquiz',
+			url: 'https://english.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Journalism': {
-			url: '/academics/journalism/?gc_source=majorquiz',
+			url: 'https://jnm.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
