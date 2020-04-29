@@ -46,7 +46,7 @@
 		},{
 			text: "I enjoy learning about languages.",
 			answer: "",
-			majors: ["English", "History", "Spanish", "TESOL", "Sign Language Interpreting"],
+			majors: ["English", "History", "TESOL"],
 		},{
 			text: "I like to experiment with better and faster ways of doing things.",
 			answer: "",
@@ -66,7 +66,7 @@
 		},{
 			text: "I enjoy helping people.",
 			answer: "",
-			majors: ["Sign Language Interpreting", "Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religion"],
+			majors: ["Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religion"],
 		},{
 			text: "I'm good with numbers and am detail-oriented.",
 			answer: "",
@@ -106,7 +106,7 @@
 		},{
 			text: "I want to work with people on the margins of society or who have been oppressed.",
 			answer: "",
-			majors: ["Sign Language Interpreting", "Social Work", "TESOL", "Psychology"],
+			majors: ["Social Work", "TESOL", "Psychology"],
 		},{
 			text: "I'm interested in technology and learning how computers work.",
 			answer: "",
@@ -199,16 +199,6 @@
 		},
 		'TESOL': {
 			url: '/academics/tesol/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Spanish': {
-			url: '/academics/spanish/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Sign Language Interpreting': {
-			url: '/academics/sign-language-interpreting/?gc_source=majorquiz',
 			score: averageScore,
 			questions: 0,
 		},
