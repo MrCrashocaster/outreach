@@ -15,6 +15,15 @@
 		currentQuestionIndex = -1,
 		chart = null;
 
+
+					/* DO NOT CHANGE CODE ABOVE */
+
+
+
+
+
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 	// mapping between questions & majors they increment
 
 	// **** ONLY ADD OR CHANGE NECESSARY QUESTIONS ****
@@ -298,6 +307,16 @@
 			questions: 0,
 		},
 	};
+
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+				/* DO NOT CHANGE CODE BELOW */
 
 	// sort the major names to use as labels on the graph
 	var sortedMajors = Object.keys( majors );
