@@ -518,7 +518,6 @@
 		resultsContainer.classList.remove('hide');
 		questionContainer.classList.add('hide');
 
-		trackCompletion();
 	}
 
 	function goToNextQuestion()
