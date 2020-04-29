@@ -30,7 +30,7 @@
 		},{
 			text: "I'm interested in intellectual ideas, including those that are philosophical or religious.",
 			answer: "",
-			majors: ["Bible and Religion", "English", "History", "Sociology", "Peace, Justice & Conflict Studies", "Writing"],
+			majors: ["Religion", "English", "History", "Sociology"],
 		},{
 			text: "I enjoy performing as an actor, or working behind the scenes on theatrical productions.",
 			answer: "",
@@ -42,7 +42,7 @@
 		},{
 			text: "I enjoy learning about how the human body and natural world work.",
 			answer: "",
-			majors: ["Biology", "Chemistry", "Environmental & Marine Science", "Molecular Biology/Biochemistry", "Nursing", "Sustainable Food Systems"],
+			majors: ["Biology", "Chemistry", "Environmental Studies", "Molecular Biology/Biochemistry", "Nursing"],
 		},{
 			text: "I enjoy learning about languages.",
 			answer: "",
@@ -62,15 +62,15 @@
 		},{
 			text: "I'm interested in law, debate, government, and politics.",
 			answer: "",
-			majors: ["History", "Peace, Justice & Conflict Studies", "Sociology"],
+			majors: ["History", "Sociology"],
 		},{
 			text: "I enjoy helping people.",
 			answer: "",
-			majors: ["Sign Language Interpreting", "Elementary Education", "Secondary Education", "Nursing", "Peace, Justice & Conflict Studies", "Social Work", "TESOL", "Bible and Religion"],
+			majors: ["Sign Language Interpreting", "Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religion"],
 		},{
 			text: "I'm good with numbers and am detail-oriented.",
 			answer: "",
-			majors: ["Accounting", "Business", "Sustainability Management", "Mathematics"],
+			majors: ["Accounting", "Business", "Mathematics"],
 		},{
 			text: "I especially love working with children.",
 			answer: "",
@@ -78,23 +78,23 @@
 		},{
 			text: "I'm very ambitious, persuasive, and love coming up with my own ideas.",
 			answer: "",
-			majors: ["Business", "Marketing", "Sustainability Management", "Sport Management"],
+			majors: ["Business", "Marketing", "Sport Management"],
 		},{
 			text: "I'm concerned about the state of the environment and want to work to improve it.",
 			answer: "",
-			majors: ["Environmental & Marine Science", "Sustainability Management", "Sustainability Studies", "Sustainable Food Systems"],
+			majors: ["Environmental Studies"],
 		},{
 			text: "I enjoy learning about different parts of the world.",
 			answer: "",
-			majors: ["History", "Peace, Justice & Conflict Studies", "Sociology", "Sustainability Studies", "Journalism"],
+			majors: ["History", "Sociology", "Journalism"],
 		},{
 			text: "I'm interested in science and enjoy helping people.",
 			answer: "",
-			majors: ["Exercise Science", "Nursing", "Psychology", "Molecular Biology/Biochemistry", "Sustainability Studies", "Sustainable Food Systems"],
+			majors: ["Exercise Science", "Nursing", "Psychology", "Molecular Biology/Biochemistry"],
 		},{
 			text: "I need the freedom to be creative and express myself.",
 			answer: "",
-			majors: ["Art", "Film Production", "Theater", "Music", "Writing"],
+			majors: ["Art", "Film Production", "Theater", "Music"],
 		},{
 			text: "I am interested in helping bodies heal and rehabilitate.",
 			answer: "",
@@ -102,11 +102,11 @@
 		},{
 			text: "I am interested in conflict resolution, criminal justice or mediation.",
 			answer: "",
-			majors: ["Peace, Justice & Conflict Studies", "Psychology", "Sociology"],
+			majors: ["Psychology", "Sociology"],
 		},{
 			text: "I want to work with people on the margins of society or who have been oppressed.",
 			answer: "",
-			majors: ["Sign Language Interpreting", "Peace, Justice & Conflict Studies", "Social Work", "TESOL", "Psychology"],
+			majors: ["Sign Language Interpreting", "Social Work", "TESOL", "Psychology"],
 		},{
 			text: "I'm interested in technology and learning how computers work.",
 			answer: "",
@@ -114,15 +114,15 @@
 		},{
 			text: "I like to work with my hands and be outdoors.",
 			answer: "",
-			majors: ["Sustainable Food Systems", "Environmental & Marine Science", "Engineering Physics", "Art", "Sustainability Studies"],
+			majors: ["Environmental Studies", "Engineering Physics", "Art"],
 		},{
 			text: "I am always reading a book or writing my own stories.",
 			answer: "",
-			majors: ["English", "Journalism", "History", "Writing", "Communication"],
+			majors: ["English", "Journalism", "History", "Communication"],
 		},{
 			text: "I like to offer advice to others.",
 			answer: "",
-			majors: ["Psychology", "Social Work", "Bible and Religion", "Elementary Education", "Sustainability Management"],
+			majors: ["Psychology", "Social Work", "Religion", "Elementary Education"],
 		}
 	];
 	shuffle(questions);
@@ -137,22 +137,7 @@
 			score: averageScore,
 			questions: 0,
 		},
-		'Peace, Justice & Conflict Studies': {
-			url: '/academics/peace-justice-and-conflict-studies/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Sustainability Studies': {
-			url: '/academics/sustainability-studies/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Sustainable Food Systems': {
-			url: '/academics/sustainable-food-systems/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Environmental & Marine Science': {
+		'Environmental Studies': {
 			url: '/academics/environmental-marine-science/?gc_source=majorquiz',
 			score: averageScore,
 			questions: 0,
@@ -192,7 +177,7 @@
 			score: averageScore,
 			questions: 0,
 		},
-		'Bible and Religion': {
+		'Religion': {
 			url: '/academics/bible-and-religion/?gc_source=majorquiz',
 			score: averageScore,
 			questions: 0,
@@ -234,11 +219,6 @@
 		},
 		'English': {
 			url: '/academics/english/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Writing': {
-			url: '/academics/writing/?gc_source=majorquiz',
 			score: averageScore,
 			questions: 0,
 		},
@@ -294,11 +274,6 @@
 		},
 		'Sport Management': {
 			url: '/academics/sport-management/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Sustainability Management': {
-			url: '/academics/sustainability-management/?gc_source=majorquiz',
 			score: averageScore,
 			questions: 0,
 		},
