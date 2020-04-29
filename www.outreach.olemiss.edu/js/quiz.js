@@ -31,11 +31,11 @@
 		{
 			text: "I have a strong interest and ability in visual art.",
 			answer: "",
-			majors: ["Art", "Theater"],
+			majors: ["Art", "Theatre"],
 		},{
 			text: "I'm interested in graphic and/or Web design.",
 			answer: "",
-			majors: ["Computer Science", "Information Technology", "Art", "Communication"],
+			majors: ["Computer Science", "Art", "Communication Sciences"],
 		},{
 			text: "I'm interested in intellectual ideas, including those that are philosophical or religious.",
 			answer: "",
@@ -43,7 +43,7 @@
 		},{
 			text: "I enjoy performing as an actor, or working behind the scenes on theatrical productions.",
 			answer: "",
-			majors: ["Theater", "Film Production", "Broadcasting"],
+			majors: ["Theatre", "Film Production"],
 		},{
 			text: "I like to sing and/or play musical instruments.",
 			answer: "",
@@ -59,15 +59,15 @@
 		},{
 			text: "I like to experiment with better and faster ways of doing things.",
 			answer: "",
-			majors: ["Chemistry", "Computer Science", "Mathematics", "Molecular Biology/Biochemistry", "Physics", "Information Technology", "Engineering Physics"],
+			majors: ["Chemistry", "Computer Science", "Mathematics", "Molecular Biology/Biochemistry", "Physics", "Engineering"],
 		},{
 			text: "I enjoy working with people, and I have strong verbal and written communication skills.",
 			answer: "",
-			majors: ["Broadcasting", "Communication", "Elementary Education", "Secondary Education", "English", "Film Production", "Journalism", "Marketing", "Public Relations", "Sport Management"],
+			majors: ["Communication Sciences", "Elementary Education", "Secondary Education", "English", "Film Production", "Journalism", "Marketing", "Integrated Marketing Communications", "Sport and Recreation Administration"],
 		},{
 			text: "I like math and figuring out how things work.",
 			answer: "",
-			majors: ["Physics", "Mathematics", "Computer Science", "Engineering Physics"],
+			majors: ["Physics", "Mathematics", "Computer Science", "Engineering"],
 		},{
 			text: "I'm interested in law, debate, government, and politics.",
 			answer: "",
@@ -87,7 +87,7 @@
 		},{
 			text: "I'm very ambitious, persuasive, and love coming up with my own ideas.",
 			answer: "",
-			majors: ["Business", "Marketing", "Sport Management"],
+			majors: ["Business", "Marketing", "Sport and Recreation Administration"],
 		},{
 			text: "I'm concerned about the state of the environment and want to work to improve it.",
 			answer: "",
@@ -103,7 +103,7 @@
 		},{
 			text: "I need the freedom to be creative and express myself.",
 			answer: "",
-			majors: ["Art", "Film Production", "Theater", "Music"],
+			majors: ["Art", "Film Production", "Theatre", "Music"],
 		},{
 			text: "I am interested in helping bodies heal and rehabilitate.",
 			answer: "",
@@ -119,15 +119,15 @@
 		},{
 			text: "I'm interested in technology and learning how computers work.",
 			answer: "",
-			majors: ["Computer Science", "Information Technology"],
+			majors: ["Computer Science"],
 		},{
 			text: "I like to work with my hands and be outdoors.",
 			answer: "",
-			majors: ["Environmental Studies", "Engineering Physics", "Art"],
+			majors: ["Environmental Studies", "Engineering", "Art"],
 		},{
 			text: "I am always reading a book or writing my own stories.",
 			answer: "",
-			majors: ["English", "Journalism", "History", "Communication"],
+			majors: ["English", "Journalism", "History", "Communication Sciences"],
 		},{
 			text: "I like to offer advice to others.",
 			answer: "",
@@ -226,53 +226,48 @@
 			score: averageScore,
 			questions: 0,
 		},
-		'Public Relations': {
-			url: '/academics/public-relations/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Broadcasting': {
-			url: '/academics/broadcasting/?gc_source=majorquiz',
+		'Integrated Marketing Communications': {
+			url: 'https://catalog.olemiss.edu/journalism/bs-imc',
 			score: averageScore,
 			questions: 0,
 		},
 		'Film Production': {
-			url: '/academics/film-production/?gc_source=majorquiz',
+			url: 'https://theatreandfilm.olemiss.edu/film.html',
 			score: averageScore,
 			questions: 0,
 		},
-		'Theater': {
-			url: '/academics/theater/?gc_source=majorquiz',
+		'Theatre': {
+			url: 'http://theatreandfilm.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Music': {
-			url: '/academics/music/?gc_source=majorquiz',
+			url: 'https://music.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Art': {
-			url: '/academics/art/?gc_source=majorquiz',
+			url: 'https://art.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
-		'Communication': {
-			url: '/academics/communication/?gc_source=majorquiz',
+		'Communication Sciences': {
+			url: 'https://csd.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Marketing': {
-			url: '/academics/marketing/?gc_source=majorquiz',
+			url: 'https://www.olemissbusiness.com/depts/marketing/',
 			score: averageScore,
 			questions: 0,
 		},
 		'Business': {
-			url: '/academics/business/?gc_source=majorquiz',
+			url: 'https://www.olemissbusiness.com',
 			score: averageScore,
 			questions: 0,
 		},
-		'Sport Management': {
-			url: '/academics/sport-management/?gc_source=majorquiz',
+		'Sport and Recreation Administration': {
+			url: 'https://hesrm.olemiss.edu/recreation-administration/welcome-to-recreation-administration/',
 			score: averageScore,
 			questions: 0,
 		},
@@ -281,28 +276,23 @@
 			score: averageScore,
 			questions: 0,
 		},
-		'Engineering Physics': {
-			url: '/academics/engineering-physics/?gc_source=majorquiz',
+		'Engineering': {
+			url: 'https://engineering.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Physics': {
-			url: '/academics/physics/?gc_source=majorquiz',
+			url: 'https://physics.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Mathematics': {
-			url: '/academics/mathematics/?gc_source=majorquiz',
+			url: 'https://math.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
 		'Computer Science': {
-			url: '/academics/computer-science/?gc_source=majorquiz',
-			score: averageScore,
-			questions: 0,
-		},
-		'Information Technology': {
-			url: '/academics/information-technology/?gc_source=majorquiz',
+			url: 'https://www.cs.olemiss.edu',
 			score: averageScore,
 			questions: 0,
 		},
