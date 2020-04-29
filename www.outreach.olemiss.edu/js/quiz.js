@@ -109,7 +109,7 @@
 			answer: "",
 			majors: ["Exercise Science", "Physical Education", "Molecular Biology/Biochemistry", "Nursing"],
 		},{
-			text: "I am interested in conflict resolution, criminal justice or mediation.",
+			text: "I am interested in conflict resolution or criminal justice.",
 			answer: "",
 			majors: ["Psychology", "Sociology"],
 		},{
