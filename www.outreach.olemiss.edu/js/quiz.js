@@ -524,6 +524,7 @@
 	{
 		if (currentQuestionIndex < questions.length - 1) {
 			goToQuestion( currentQuestionIndex + 1 );
+			// Random images to test function, NOT YET WORKING ***
 			let arr = ["https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=25fb0992bdb86b7fbef53ead58c7b7cd&auto=format&fit=crop&w=950&q=80", "https://images.unsplash.com/photo-1534162967756-a412cc66c624?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69dd3295b9d2406824447c5cd74bc032&auto=format&fit=crop&w=1957&q=80"];
 			  let i = -1;
 				$("#button").click(function() {
@@ -550,6 +551,7 @@
 	
 	 // Shuffles array in place.
 	 // @param {Array} a items The array containing the items.
+	 // Grabbed from stackoverflow
 	 
 	function shuffle(a) {
 		var j, x, i;
