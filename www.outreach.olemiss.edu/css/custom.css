@@ -1,1 +1,4 @@
-/* Add here all your CSS customizations */
+.responsive {
+    width: 100%;
+    height: auto;
+  }
