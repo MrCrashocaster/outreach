@@ -434,7 +434,6 @@
 			score = score < 0 ? 0 : (score > 4 ? 4 : score);
 			// update object
 			majors[sortedMajors[i]].score = score;
-			// update chart's data set
 
 		}
 	}
@@ -446,10 +445,22 @@
 	function goToQuestion(i) {
 		if (currentQuestionIndex === i) {
 			console.error('Attempting to transition to current question');
+			var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
+			var img2 = "img/major.jpg";
+			
+			var imgElement = document.getElementById('toggleImage');
+		 
+			imgElement.src = (imgElement.src === img1)? img2 : img1;
 			return;
 		}
 		if (!questions[i]) {
 			console.error('Question with index', i, 'not found');
+			var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
+			var img2 = "img/major.jpg";
+			
+			var imgElement = document.getElementById('toggleImage');
+		 
+			imgElement.src = (imgElement.src === img1)? img2 : img1;
 			return;
 		}
 
@@ -512,18 +523,12 @@
 		if (currentQuestionIndex < questions.length - 1) {
 			goToQuestion(currentQuestionIndex + 1);
 			// Random images to test function, NOT YET WORKING ***
-			let arr = ["https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=25fb0992bdb86b7fbef53ead58c7b7cd&auto=format&fit=crop&w=950&q=80", "https://images.unsplash.com/photo-1534162967756-a412cc66c624?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69dd3295b9d2406824447c5cd74bc032&auto=format&fit=crop&w=1957&q=80"];
-			let i = -1;
-			$("#button").click(function () {
-				i++;
-				$("img").fadeOut(function () {
-					console.log("i is=" + i);
-					$(this).attr('src', arr[i]).fadeIn();
-					if (i == arr.length) {
-						i = 0;
-					}
-				});
-			});
+			var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
+			var img2 = "img/major.jpg";
+			
+			var imgElement = document.getElementById('toggleImage');
+		 
+			imgElement.src = (imgElement.src === img1)? img2 : img1;
 		}
 		else {
 			goToResults();
