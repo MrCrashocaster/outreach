@@ -25,7 +25,7 @@
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css" />
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
@@ -41,6 +41,7 @@
 
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="../css/skins/default.css" />
+	<link rel="stylesheet" href="../css/form.css">
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="../css/custom.css" />
@@ -437,7 +438,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="align-right">
-							<!--If needed space-->
+								<!--If needed space-->
 							</div>
 						</div>
 					</div>
@@ -489,9 +490,11 @@
 									<!-- results of quiz -->
 									<div id="quiz__results" class="quiz__results quiz__wrap hide">
 										<div id="quiz__results-text" class="quiz__results-text"></div>
-										<button id="quiz__button--return-to-questions" class="quiz__button quiz__button--return-to-questions button button--gray">‹ Return to Questions</button>
-										<button onClick="window.location.reload();">Reload Questions</button>		
-										
+										<button id="quiz__button--return-to-questions"
+											class="quiz__button quiz__button--return-to-questions button button--gray">‹
+											Return to Questions</button>
+										<button onClick="window.location.reload();">Reload Questions</button>
+
 									</div>
 
 								</section>
@@ -506,21 +509,22 @@
 					<div class="col-md-3 mr-lg">
 						<aside class="sidebar" id="sidebar" data-plugin-sticky
 							data-plugin-options='{"minWidth": 991, "containerSelector": ".container", "padding": {"top": 90}}'>
-							<div class="card">
-								<h5 class="card-header">Want More Information?</h5>
-								<div class="card-body">
-									<form>
-										<div class="form-group">
-											<label for="">First Name</label>
-											<input type="text" class="form-control" id=""
-												placeholder="First Name...">
-										</div>
-										<div class="form-group">
-											<label for="">Last Name</label>
-											<input type="text" class="form-control" id=""
-												placeholder="Last Name...">
-										</div>
 
+							<div class="panel panel-danger">
+								<div class="panel-body">
+									<form id="reused_form">
+										<div class="form-group">
+											<label><i aria-hidden="true"></i><b>Want More Information?</b></label>
+											<label><i class="fa fa-user" aria-hidden="true"></i> First and Last
+												Name</label>
+											<input type="text" name="name" class="form-control"
+												placeholder="Enter Name">
+										</div>
+										<div class="form-group">
+											<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+											<input type="email" name="email" class="form-control"
+												placeholder="Enter Email">
+										</div>
 										<div class="form-group">
 											<label for="">Year in School</label>
 											<select id="inputState" class="form-control">
@@ -533,18 +537,22 @@
 												<option>Other</option>
 											</select>
 										</div>
-
 										<div class="form-group">
-											<label for="">Email</label>
-											<input type="text" class="form-control" id=""
-												placeholder="username@domain.com">
+											<button class="btn btn-raised btn-block btn-danger">Submit &rarr;</button>
 										</div>
-
-
-										<button type="submit" class="btn btn-primary">Submit</button>
 									</form>
+									<div id="error_message" style="width:100%; height:100%; display:none; ">
+										<h4>
+											Error
+										</h4>
+										Sorry there was an error sending your form.
+									</div>
+									<div id="success_message" style="width:100%; height:100%; display:none; ">
+										<h2>Success! Your Form was Sent Successfully.</h2>
+									</div>
 								</div>
 							</div>
+
 						</aside>
 					</div>
 				</div>
@@ -651,6 +659,8 @@
 		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src="vendor/vide/vide.min.js"></script>
+		<script src="../js/form.js"></script>
+
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="../js/theme.js"></script>
