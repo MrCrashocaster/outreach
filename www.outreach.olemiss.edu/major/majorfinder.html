@@ -456,7 +456,7 @@
 					<div class="col-md-8 mb-lg">
 
 						<div class="card text-center">
-							<h5 class="card-header">Major Finder</h5>
+							<h1 class="card-header"><b>Major Finder</b></h1>
 							<img src="img/major.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<section class="quiz">
@@ -465,8 +465,7 @@
 									<div id="quiz__question" class="quiz__question quiz__wrap">
 										<div class="quiz__question-transition-wrap">
 											<!-- Question -->
-											<p id="quiz__question-text" class="quiz__question-text quiz__p">I like to
-												experiment with better and faster ways of doing things.</p>
+											<p id="quiz__question-text" class="quiz__question-text quiz__p"></p>
 											<!-- Yes -->
 											<input type="radio" class="quiz__question-radio" name="quiz__question-radio"
 												id="quiz__question-radio--yes">
@@ -480,20 +479,21 @@
 										</div>
 										<!-- prev/next -->
 										<button id="quiz__button--prev"
-											class="quiz__button quiz__button--prev button button--gray hide">‹</button>
+											class="quiz__button quiz__button--prev btn btn-primary btn-sm">‹</button>
 										<button id="quiz__button--next"
-											class="quiz__button button button--gray">›</button>
-										<!-- 1/30 -->
-										<div id="quiz__question-count" class="quiz__question-count">1 / 26</div>
+											class="quiz__button btn btn-primary btn-sm">›</button>
+										<!-- 1/26 -->
+										<div id="quiz__question-count" class="quiz__question-count"><b>1 / 26</b></div>
 									</div>
 
 									<!-- results of quiz -->
 									<div id="quiz__results" class="quiz__results quiz__wrap hide">
 										<div id="quiz__results-text" class="quiz__results-text"></div>
 										<button id="quiz__button--return-to-questions"
-											class="quiz__button quiz__button--return-to-questions button button--gray">‹
-											Return to Questions</button>
-										<button onClick="window.location.reload();">Reload Questions</button>
+											class="quiz__button quiz__button--return-to-questions btn btn-raised btn-block btn-danger">‹
+											Back</button>
+										<button class="btn btn-raised btn-block btn-danger"
+											onClick="window.location.reload();">Reload Questions</button>
 
 									</div>
 
@@ -514,7 +514,9 @@
 								<div class="panel-body">
 									<form id="reused_form">
 										<div class="form-group">
-											<label><i aria-hidden="true"></i><b>Want More Information?</b></label>
+											<label><i aria-hidden="true"></i><b>
+													<h4>Want More Information?</h4>
+												</b></label>
 											<label><i class="fa fa-user" aria-hidden="true"></i> First and Last
 												Name</label>
 											<input type="text" name="name" class="form-control"

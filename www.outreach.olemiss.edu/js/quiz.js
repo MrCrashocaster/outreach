@@ -1,5 +1,4 @@
-!function()
-{
+!function () {
 	'use strict';
 	var quiz = document.getElementById('quiz'),
 		questionContainer = document.getElementById('quiz__question'),
@@ -16,120 +15,120 @@
 		chart = null;
 
 
-					/* DO NOT CHANGE CODE ABOVE */
+	/* DO NOT CHANGE CODE ABOVE */
 
 
 
 
 
-// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+	// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 	// mapping between questions & majors they increment
 
 	// **** ONLY ADD OR CHANGE NECESSARY QUESTIONS ****
 	var questions = [
 		{
-			text: "I have a strong interest and ability in visual art.",
+			text: "<b><h4>I have a strong interest and ability in visual art.</h4></b>",
 			answer: "",
 			majors: ["Art", "Theatre"],
-		},{
-			text: "I'm interested in graphic and/or Web design.",
+		}, {
+			text: "<b><h4>I'm interested in graphic and/or Web design.</h4></b>",
 			answer: "",
 			majors: ["Computer Science", "Art", "Communication Sciences"],
-		},{
-			text: "I'm interested in intellectual ideas, including those that are philosophical or religious.",
+		}, {
+			text: "<b><h4>I'm interested in intellectual ideas, including those that are philosophical or religious.</h4></b>",
 			answer: "",
 			majors: ["Religious Studies", "English", "History", "Sociology"],
-		},{
-			text: "I enjoy performing as an actor, or working behind the scenes on theatrical productions.",
+		}, {
+			text: "<b><h4>I enjoy performing as an actor, or working behind the scenes on theatrical productions.</h4></b>",
 			answer: "",
 			majors: ["Theatre", "Film Production"],
-		},{
-			text: "I like to sing and/or play musical instruments.",
+		}, {
+			text: "<b><h4>I like to sing and/or play musical instruments.</h4></b>",
 			answer: "",
 			majors: ["Music"],
-		},{
-			text: "I enjoy learning about how the human body and natural world work.",
+		}, {
+			text: "<b><h4>I enjoy learning about how the human body and natural world work.</h4></b>",
 			answer: "",
 			majors: ["Biology", "Chemistry", "Environmental Studies", "Molecular Biology/Biochemistry", "Nursing"],
-		},{
-			text: "I enjoy learning about languages.",
+		}, {
+			text: "<b><h4>I enjoy learning about languages.</h4></b>",
 			answer: "",
 			majors: ["English", "History", "TESOL"],
-		},{
-			text: "I like to experiment with better and faster ways of doing things.",
+		}, {
+			text: "<b><h4>I like to experiment with better and faster ways of doing things.</h4></b>",
 			answer: "",
 			majors: ["Chemistry", "Computer Science", "Mathematics", "Molecular Biology/Biochemistry", "Physics", "Engineering"],
-		},{
-			text: "I enjoy working with people, and I have strong verbal and written communication skills.",
+		}, {
+			text: "<b><h4>I enjoy working with people, and I have strong verbal and written communication skills.</h4></b>",
 			answer: "",
 			majors: ["Communication Sciences", "Elementary Education", "Secondary Education", "English", "Film Production", "Journalism", "Marketing", "Integrated Marketing Communications", "Sport and Recreation Administration"],
-		},{
-			text: "I like math and figuring out how things work.",
+		}, {
+			text: "<b><h4>I like math and figuring out how things work.</h4></b>",
 			answer: "",
 			majors: ["Physics", "Mathematics", "Computer Science", "Engineering"],
-		},{
-			text: "I'm interested in law, debate, government, and politics.",
+		}, {
+			text: "<b><h4>I'm interested in law, debate, government, and politics.</h4></b>",
 			answer: "",
 			majors: ["History", "Sociology"],
-		},{
-			text: "I enjoy helping people.",
+		}, {
+			text: "<b><h4>I enjoy helping people.</h4></b>",
 			answer: "",
 			majors: ["Elementary Education", "Secondary Education", "Nursing", "Social Work", "TESOL", "Religious Studies"],
-		},{
-			text: "I'm good with numbers and am detail-oriented.",
+		}, {
+			text: "<b><h4>I'm good with numbers and am detail-oriented.</h4></b>",
 			answer: "",
 			majors: ["Accounting", "Business", "Mathematics"],
-		},{
-			text: "I especially love working with children.",
+		}, {
+			text: "<b><h4>I especially love working with children.</h4></b>",
 			answer: "",
 			majors: ["Elementary Education", "Physical Education"],
-		},{
-			text: "I'm very ambitious, persuasive, and love coming up with my own ideas.",
+		}, {
+			text: "<b><h4>I'm very ambitious, persuasive, and love coming up with my own ideas.</h4></b>",
 			answer: "",
 			majors: ["Business", "Marketing", "Sport and Recreation Administration"],
-		},{
-			text: "I'm concerned about the state of the environment and want to work to improve it.",
+		}, {
+			text: "<b><h4>I'm concerned about the state of the environment and want to work to improve it.</h4></b>",
 			answer: "",
 			majors: ["Environmental Studies"],
-		},{
-			text: "I enjoy learning about different parts of the world.",
+		}, {
+			text: "<b><h4>I enjoy learning about different parts of the world.</h4></b>",
 			answer: "",
 			majors: ["History", "Sociology", "Journalism"],
-		},{
-			text: "I'm interested in science and enjoy helping people.",
+		}, {
+			text: "<b><h4>I'm interested in science and enjoy helping people.</h4></b>",
 			answer: "",
 			majors: ["Exercise Science", "Nursing", "Psychology", "Molecular Biology/Biochemistry"],
-		},{
-			text: "I need the freedom to be creative and express myself.",
+		}, {
+			text: "<b><h4>I need the freedom to be creative and express myself.</h4></b>",
 			answer: "",
 			majors: ["Art", "Film Production", "Theatre", "Music"],
-		},{
-			text: "I am interested in helping bodies heal and rehabilitate.",
+		}, {
+			text: "<b><h4>I am interested in helping bodies heal and rehabilitate.</h4></b>",
 			answer: "",
 			majors: ["Exercise Science", "Physical Education", "Molecular Biology/Biochemistry", "Nursing"],
-		},{
-			text: "I am interested in conflict resolution or criminal justice.",
+		}, {
+			text: "<b><h4>I am interested in conflict resolution or criminal justice.</h4></b>",
 			answer: "",
 			majors: ["Psychology", "Sociology"],
-		},{
-			text: "I want to work with people on the margins of society or who have been oppressed.",
+		}, {
+			text: "<b><h4>I want to work with people on the margins of society or who have been oppressed.</h4></b>",
 			answer: "",
 			majors: ["Social Work", "TESOL", "Psychology"],
-		},{
-			text: "I'm interested in technology and learning how computers work.",
+		}, {
+			text: "<b><h4>I'm interested in technology and learning how computers work.</h4></b>",
 			answer: "",
 			majors: ["Computer Science"],
-		},{
-			text: "I like to work with my hands and be outdoors.",
+		}, {
+			text: "<b><h4>I like to work with my hands and be outdoors.</h4></b>",
 			answer: "",
 			majors: ["Environmental Studies", "Engineering", "Art"],
-		},{
-			text: "I am always reading a book or writing my own stories.",
+		}, {
+			text: "<b><h4>I am always reading a book or writing my own stories.</h4></b>",
 			answer: "",
 			majors: ["English", "Journalism", "History", "Communication Sciences"],
-		},{
-			text: "I like to offer advice to others.",
+		}, {
+			text: "<b><h4>I like to offer advice to others.</h4></b>",
 			answer: "",
 			majors: ["Psychology", "Social Work", "Religious Studies", "Elementary Education"],
 		}
@@ -299,17 +298,17 @@
 	};
 
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
 
 
 
-				/* DO NOT CHANGE CODE BELOW */
+	/* DO NOT CHANGE CODE BELOW */
 
 	// sort the major names to use as labels on the graph
-	var sortedMajors = Object.keys( majors );
+	var sortedMajors = Object.keys(majors);
 
 	// for each major, calculate how many associated questions it has
 	for (var i = 0; i < questions.length; i++) {
@@ -317,8 +316,8 @@
 		for (var j = 0; j < associatedMajorNames.length; j++) {
 			// also increment the number of questions for this major
 			var majorName = associatedMajorNames[j];
-			if (majors.hasOwnProperty( majorName )) {
-				majors[ majorName ].questions++;
+			if (majors.hasOwnProperty(majorName)) {
+				majors[majorName].questions++;
 			}
 			else {
 				console.error('Major ', majorName, 'found in list of questions but not list of majors');
@@ -327,41 +326,39 @@
 	};
 
 	// display first question
-	goToQuestion( 0 );
+	goToQuestion(0);
 
 	// add listeners to radio buttons
-	toggleRadioListeners( true );
+	toggleRadioListeners(true);
 
 	// add listeners to prev/next buttons
 	prevButton.addEventListener('click', goToPrevQuestion);
 	nextButton.addEventListener('click', goToNextQuestion);
 
 	// add listener to "return to questions" button
-	returnButton.addEventListener('click', function()
-	{
+	returnButton.addEventListener('click', function () {
 		resultsContainer.classList.add('hide');
 		questionContainer.classList.remove('hide');
 	});
 
-	function radioListener( evt )
-	{
+	function radioListener(evt) {
 		// answer question with a yes or no
 		if (evt.target.id === "quiz__question-radio--yes") {
-			answerQuestion( currentQuestionIndex, 'yes' );
+			answerQuestion(currentQuestionIndex, 'yes');
 		}
 		else {
-			answerQuestion( currentQuestionIndex, 'no' );
+			answerQuestion(currentQuestionIndex, 'no');
 		}
 		goToNextQuestion();
 	}
 
-	function toggleRadioListeners( listen ) {
+	function toggleRadioListeners(listen) {
 		for (var i = radioButtons.length - 1; i >= 0; i--) {
 			if (listen) {
-				radioButtons[i].addEventListener('change', radioListener );
+				radioButtons[i].addEventListener('change', radioListener);
 			}
 			else {
-				radioButtons[i].removeEventListener('change', radioListener );
+				radioButtons[i].removeEventListener('change', radioListener);
 			}
 		}
 	}
@@ -371,15 +368,14 @@
 	 * @param  {Integer} i      Question index
 	 * @param  {String} answer  'yes'/'no'
 	 */
-	function answerQuestion( i, answer )
-	{
+	function answerQuestion(i, answer) {
 		// validate inputs
-		if ( !questions[i] ) {
+		if (!questions[i]) {
 			console.error('Question with index', i, 'not found');
 			return;
 		}
-		if ( answer !== 'yes' && answer !== 'no' ) {
-			console.error('Invalid answer', answer ,'provided to question with index', i, ':', questions[i].text);
+		if (answer !== 'yes' && answer !== 'no') {
+			console.error('Invalid answer', answer, 'provided to question with index', i, ':', questions[i].text);
 			return;
 		}
 
@@ -388,13 +384,13 @@
 
 		// amount to change score for each major depending on number of questions it's associated with.
 		// if it's associated with more than 6 questions, it defaults to .2
-		var scoreChangeAmounts = [ 1.3, .8, .6, .4, .3, .25 ];
+		var scoreChangeAmounts = [1.3, .8, .6, .4, .3, .25];
 		var scoreChangeDefault = .2;
 
 		// add or subtract score changes based on answer to question
 		var scoreMultiplier;
 		// if question is unanswered, simply add/subtract scorechange
-		if ( questions[i].answer === '' ) {
+		if (questions[i].answer === '') {
 			scoreMultiplier = answer === 'yes' ? 1 : -1;
 		}
 		// if question's answer changed, we'll have to add/subtract twice to compensate for past answer
@@ -411,11 +407,11 @@
 		// update scores of associated majors
 		for (var i = 0; i < associatedMajorNames.length; i++) {
 			// get major object
-			var major = majors[ associatedMajorNames[i] ];
+			var major = majors[associatedMajorNames[i]];
 			var scoreChange;
 			// change it's score
 			if (major.questions < scoreChangeAmounts.length) {
-				scoreChange = scoreChangeAmounts[ major.questions ] * scoreMultiplier;
+				scoreChange = scoreChangeAmounts[major.questions] * scoreMultiplier;
 			}
 			else {
 				scoreChange = .2 * scoreMultiplier;
@@ -426,26 +422,20 @@
 
 		// normalize all scores so that they continue to add up to the initial sum of scores
 		// by subtracting a fraction of totalScoreChange from all other majors
-		var scoreFraction = totalScoreChange / ( sortedMajors.length - associatedMajorNames.length );
+		var scoreFraction = totalScoreChange / (sortedMajors.length - associatedMajorNames.length);
 
 		for (var i = 0; i < sortedMajors.length; i++) {
-			var score = majors[ sortedMajors[i] ].score;
+			var score = majors[sortedMajors[i]].score;
 			// only subtract scoreFraction from non-associated majors
-			if (associatedMajorNames.indexOf( sortedMajors[i] ) === -1) {
+			if (associatedMajorNames.indexOf(sortedMajors[i]) === -1) {
 				score -= scoreFraction;
 			}
 			// keep all scores in 0-4 bound
-			score = score < 0 ? 0 : ( score > 4 ? 4 : score );
+			score = score < 0 ? 0 : (score > 4 ? 4 : score);
 			// update object
-			majors[ sortedMajors[i] ].score = score;
+			majors[sortedMajors[i]].score = score;
 			// update chart's data set
-			if (chart) {
-				chart.datasets[0].points[ i ].value = score;
-			}
-		}
-		// update chart
-		if ( chart ) {
-			chart.update();
+
 		}
 	}
 
@@ -453,23 +443,21 @@
 	 * Update html to display a particular question
 	 * @param  {Integer} i Index of question in questions array
 	 */
-	function goToQuestion( i )
-	{
+	function goToQuestion(i) {
 		if (currentQuestionIndex === i) {
 			console.error('Attempting to transition to current question');
 			return;
 		}
-		if ( !questions[i] ) {
+		if (!questions[i]) {
 			console.error('Question with index', i, 'not found');
 			return;
 		}
 
 		questionContainer.classList.add('quiz__question--transitioning');
-		setTimeout(function()
-		{
+		setTimeout(function () {
 			// update text and count
 			questionText.innerHTML = questions[i].text;
-			questionCount.innerHTML = (i+1) + ' / ' + questions.length;
+			questionCount.innerHTML = (i + 1) + ' / ' + questions.length;
 			// show/hide prev button
 			if (i === 0) {
 				prevButton.classList.add('hide');
@@ -498,18 +486,18 @@
 		currentQuestionIndex = i;
 	}
 
-	function goToResults()
-	{
+
+	function goToResults() {
 		console.log('showing results');
 		// get top 5 majors;
 		// slice(0) is used to copy sortedMajors instead of modify it
-		var top5 = sortedMajors.slice(0).sort(function(a, b) {
+		var top5 = sortedMajors.slice(0).sort(function (a, b) {
 			return -(majors[a].score - majors[b].score)
 		}).slice(0, 5);
 
-		var html = '<p>Thanks for taking our quiz! Your top 5 majors are:</p><ol>';
+		var html = '<p><b>Thanks for taking our quiz! Your top 5 majors are:</b></p><ol>';
 		for (var i = 0; i < top5.length; i++) {
-			html += ['<li><a href="', majors[ top5[i] ].url ,'" target="_blank">', top5[i], '</a></li>'].join('');
+			html += ['<li><a href="', majors[top5[i]].url, '" target="_blank">', top5[i], '</a></li>'].join('');
 		};
 		html += '</ol>';
 
@@ -520,39 +508,37 @@
 
 	}
 
-	function goToNextQuestion()
-	{
+	function goToNextQuestion() {
 		if (currentQuestionIndex < questions.length - 1) {
-			goToQuestion( currentQuestionIndex + 1 );
+			goToQuestion(currentQuestionIndex + 1);
 			// Random images to test function, NOT YET WORKING ***
 			let arr = ["https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=25fb0992bdb86b7fbef53ead58c7b7cd&auto=format&fit=crop&w=950&q=80", "https://images.unsplash.com/photo-1534162967756-a412cc66c624?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69dd3295b9d2406824447c5cd74bc032&auto=format&fit=crop&w=1957&q=80"];
-			  let i = -1;
-				$("#button").click(function() {
-				   i++;
-					$("img").fadeOut(function() {
-						  console.log("i is="+ i);
-						  $(this).attr('src', arr[i]).fadeIn();
-						  if ( i == arr.length ) {
-							  i = 0;
-						  }
-					 });
+			let i = -1;
+			$("#button").click(function () {
+				i++;
+				$("img").fadeOut(function () {
+					console.log("i is=" + i);
+					$(this).attr('src', arr[i]).fadeIn();
+					if (i == arr.length) {
+						i = 0;
+					}
 				});
+			});
 		}
 		else {
 			goToResults();
 		}
 	}
 
-	function goToPrevQuestion()
-	{
-		goToQuestion( currentQuestionIndex - 1 );
+	function goToPrevQuestion() {
+		goToQuestion(currentQuestionIndex - 1);
 	}
 
-	
-	 // Shuffles array in place.
-	 // @param {Array} a items The array containing the items.
-	 // Grabbed from stackoverflow
-	 
+
+	// Shuffles array in place.
+	// @param {Array} a items The array containing the items.
+	// Grabbed from stackoverflow
+
 	function shuffle(a) {
 		var j, x, i;
 		for (i = a.length; i; i -= 1) {
