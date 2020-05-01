@@ -11,7 +11,7 @@
 		nextButton = document.getElementById('quiz__button--next'),
 		returnButton = document.getElementById('quiz__button--return-to-questions'),
 		averageScore = 2,
-		currentQuestionIndex = -1,
+		currentQuestionIndex = -1;
 
 
 	/* DO NOT CHANGE CODE ABOVE */
