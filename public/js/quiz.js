@@ -1,3 +1,14 @@
+const firebaseConfig = {
+	apiKey: "AIzaSyB_fVBSRH3xnFoJ8e4p4NQhjBOziCXKKGs",
+	authDomain: "major-finder.firebaseapp.com",
+	databaseURL: "https://major-finder.firebaseio.com",
+	projectId: "major-finder",
+	storageBucket: "major-finder.appspot.com",
+	messagingSenderId: "189305033163",
+	appId: "1:189305033163:web:bb66087eaf3b0d0419264e"
+  };
+
+
 !function () {
 	'use strict';
 	var quiz = document.getElementById('quiz'),
@@ -18,7 +29,9 @@
 
 
 
+function changeQuestion() {
 
+	}
 
 	// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
