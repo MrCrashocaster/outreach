@@ -12,7 +12,6 @@
 		returnButton = document.getElementById('quiz__button--return-to-questions'),
 		averageScore = 2,
 		currentQuestionIndex = -1,
-		chart = null;
 
 
 	/* DO NOT CHANGE CODE ABOVE */
