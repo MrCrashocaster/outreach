@@ -1,13 +1,27 @@
-const firebaseConfig = {
-	apiKey: "AIzaSyB_fVBSRH3xnFoJ8e4p4NQhjBOziCXKKGs",
-	authDomain: "major-finder.firebaseapp.com",
-	databaseURL: "https://major-finder.firebaseio.com",
-	projectId: "major-finder",
-	storageBucket: "major-finder.appspot.com",
-	messagingSenderId: "189305033163",
-	appId: "1:189305033163:web:bb66087eaf3b0d0419264e"
-  };
+var question;
+var question2;
+var question3;
 
+
+// Firebase Database
+var database = firebase.database();
+
+function loadData() {
+	return database.ref("Questions").once("value");
+};
+
+loadData().then((snapshot) => {
+	snapshot.forEach(function (data) {
+		var val = data.val();
+		question = val.question1; question2 = val.question2; question3 = val.question3;
+	})
+	console.log(question);
+	console.log(question2);
+	console.log(question3);
+});
+
+
+console.log(loadData(question));
 
 !function () {
 	'use strict';
@@ -25,30 +39,19 @@ const firebaseConfig = {
 		currentQuestionIndex = -1;
 
 
-	/* DO NOT CHANGE CODE ABOVE */
-
-
-
-function changeQuestion() {
-
-	}
-
-	// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-
 	// mapping between questions & majors they increment
 
-	// **** ONLY ADD OR CHANGE NECESSARY QUESTIONS ****
 	var questions = [
 		{
-			text: "<b><h4>I have a strong interest and ability in visual art.</h4></b>",
+			text: loadData(question),
 			answer: "",
 			majors: ["Art", "Theatre"],
 		}, {
-			text: "<b><h4>I'm interested in graphic and/or Web design.</h4></b>",
+			text: loadData(question2),
 			answer: "",
 			majors: ["Computer Science", "Art", "Communication Sciences"],
 		}, {
-			text: "<b><h4>I'm interested in intellectual ideas, including those that are philosophical or religious.</h4></b>",
+			text: loadData(question3),
 			answer: "",
 			majors: ["Religious Studies", "English", "History", "Sociology"],
 		}, {
@@ -148,8 +151,6 @@ function changeQuestion() {
 	shuffle(questions);
 
 	// mappings between each major and their url, score, and associated question count
-
-	// **** ONLY ADD OR CHANGE NECESSARY MAJORS ****
 
 	var majors = {
 		'History': {
@@ -310,15 +311,6 @@ function changeQuestion() {
 	};
 
 
-	// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-
-
-	/* DO NOT CHANGE CODE BELOW */
-
 	// sort the major names to use as labels on the graph
 	var sortedMajors = Object.keys(majors);
 
@@ -458,10 +450,10 @@ function changeQuestion() {
 		if (currentQuestionIndex === i) {
 			console.error('Attempting to transition to current question');
 			var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
-			var img2 = "img/major.jpg";			
+			var img2 = "img/major.jpg";
 			var imgElement = document.getElementById('toggleImage');
-		 
-			imgElement.src = (imgElement.src === img1)? img2 : img1;
+
+			imgElement.src = (imgElement.src === img1) ? img2 : img1;
 			return;
 		}
 		if (!questions[i]) {
@@ -530,10 +522,10 @@ function changeQuestion() {
 			// Random images to test function, NOT YET WORKING ***
 			var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
 			var img2 = "img/major.jpg";
-			
+
 			var imgElement = document.getElementById('toggleImage');
-		 
-			imgElement.src = (imgElement.src === img1)? img2 : img1;
+
+			imgElement.src = (imgElement.src === img1) ? img2 : img1;
 		}
 		else {
 			goToResults();
@@ -559,4 +551,3 @@ function changeQuestion() {
 		}
 	}
 }();
-

@@ -40,6 +40,26 @@
 	<link rel="stylesheet" href="css/theme-shop.css" />
 	<link rel="stylesheet" href="css/theme-animate.css" />
 
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB_fVBSRH3xnFoJ8e4p4NQhjBOziCXKKGs",
+	authDomain: "major-finder.firebaseapp.com",
+	databaseURL: "https://major-finder.firebaseio.com",
+	projectId: "major-finder",
+	storageBucket: "major-finder.appspot.com",
+	messagingSenderId: "189305033163",
+	appId: "1:189305033163:web:bb66087eaf3b0d0419264e"
+      };
+      firebase.initializeApp(config);
+	</script>
+	
+
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="css/skins/default.css" />
 	<link rel="stylesheet" href="css/form.css">
@@ -466,7 +486,11 @@
 									<div id="quiz__question" class="quiz__question quiz__wrap">
 										<div class="quiz__question-transition-wrap">
 											<!-- Question -->
-											<p id="quiz__question-text" class="quiz__question-text quiz__p"></p>
+
+
+										<p id="quiz__question-text" class="quiz__question-text quiz__p"></p> 
+
+
 											<!-- Yes -->
 											<input type="radio" class="quiz__question-radio" name="quiz__question-radio"
 												id="quiz__question-radio--yes">
@@ -628,6 +652,10 @@
 				</div>
 			</footer>
 		</div>
+
+		<script>
+	
+		   </script>
 
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
