@@ -1,8 +1,3 @@
-var question;
-var question2;
-var question3;
-
-
 // Firebase Database
 var database = firebase.database();
 
