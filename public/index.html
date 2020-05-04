@@ -493,20 +493,21 @@
 
 											<!-- Yes -->
 											<input type="radio" class="quiz__question-radio" name="quiz__question-radio"
-												id="quiz__question-radio--yes">
+												id="quiz__question-radio--yes" onclick="changeColor()">
 											<label class="quiz__question-label button button--strong"
 												for="quiz__question-radio--yes">Yes</label>
 											<!-- No -->
 											<input type="radio" class="quiz__question-radio" name="quiz__question-radio"
-												id="quiz__question-radio--no">
+												id="quiz__question-radio--no" onclick="changeColor()">
 											<label class="quiz__question-label button"
 												for="quiz__question-radio--no">No</label>
 										</div>
 										<!-- prev/next -->
 										<button id="quiz__button--prev"
-											class="quiz__button quiz__button--prev btn btn-primary btn-sm">‹</button>
-										<button id="quiz__button--next"
-											class="quiz__button btn btn-primary btn-sm">›</button>
+											class="quiz__button quiz__button--prev btn btn-primary btn-sm"
+											onclick="changeColor()">‹</button>
+										<button id="quiz__button--next" class="quiz__button btn btn-primary btn-sm"
+											onclick="changeColor()">›</button>
 										<!-- 1/26 -->
 										<div id="quiz__question-count" class="quiz__question-count"><b>1 / 26</b></div>
 									</div>

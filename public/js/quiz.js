@@ -440,11 +440,6 @@ loadData().then((snapshot) => {
 			function goToQuestion(i) {
 				if (currentQuestionIndex === i) {
 					console.error('Attempting to transition to current question');
-					var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
-					var img2 = "img/major.jpg";
-					var imgElement = document.getElementById('toggleImage');
-
-					imgElement.src = (imgElement.src === img1) ? img2 : img1;
 					return;
 				}
 				if (!questions[i]) {
@@ -510,13 +505,6 @@ loadData().then((snapshot) => {
 			function goToNextQuestion() {
 				if (currentQuestionIndex < questions.length - 1) {
 					goToQuestion(currentQuestionIndex + 1);
-					// Random images to test photo switching function
-					var img1 = "https://www.gwc.org.uk/default/cache/file/4D81E70D-60C4-4FE7-B4DBD4299B06FAD3_fullwidth.jpg";
-					var img2 = "img/major.jpg";
-
-					var imgElement = document.getElementById('toggleImage');
-
-					imgElement.src = (imgElement.src === img1) ? img2 : img1;
 				}
 				else {
 					goToResults();
@@ -546,3 +534,15 @@ loadData().then((snapshot) => {
 	})
 });
 
+
+//Changes Images when transitioning questions
+var image = document.getElementById("toggleImage");
+
+function changeColor() {
+	if (image.getAttribute('src') == "img/major.jpg") {
+		image.src = "img/university.jpg";
+	}
+	else {
+		image.src = "img/major.jpg";
+	}
+}
