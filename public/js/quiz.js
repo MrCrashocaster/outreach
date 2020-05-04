@@ -539,7 +539,7 @@ loadData().then((snapshot) => {
 //Changes Images when transitioning questions
 var image = document.getElementById("toggleImage");
 
-function changeColor() {
+function changeImage() {
 	if (image.getAttribute('src') == "img/major.jpg") {
 		image.src = "img/university.jpg";
 	}
