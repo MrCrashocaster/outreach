@@ -14,6 +14,7 @@ loadData().then((snapshot) => {
 		question16 = val.question16; question17 = val.question17; question18 = val.question18; question19 = val.question19; question20 = val.question20;
 		question21 = val.question21; question22 = val.question22; question23 = val.question23; question24 = val.question24; question25 = val.question25;
 		question26 = val.question26;
+
 		!function () {
 			'use strict';
 			var quiz = document.getElementById('quiz'),
