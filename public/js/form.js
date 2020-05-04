@@ -1,4 +1,3 @@
-
 $(function () {
     $('#reused_form').submit(function (e) {
         e.preventDefault();
@@ -15,20 +14,20 @@ document.getElementById('submit').addEventListener('click', event => {
     const leadName = document.getElementById('client_name').value;
     const leadEmail = document.getElementById('client_email').value;
     const leadYear = document.getElementById('inputState').value;
+    const leadMessage = document.getElementById('inputMessage').value;
   
   if(leadYear != "" && leadEmail != "" && leadName != "") {
     
-    firebase.database().ref('students').once('value', snapshot => {
+    firebase.database().ref('Prospective Students').once('value', snapshot => {
       var totalLeads = snapshot.numChildren();
       totalLeads++;
   
-      firebase.database().ref('students').child(totalLeads).set({
+      firebase.database().ref('Prospective Students').child(totalLeads).set({
         name: leadName,
         year: leadYear,
         email: leadEmail,
+        message: leadMessage,
       });
-      $('.contact-form').hide();
-      $('.message-sent-success').show();
       alert('Student Info Saved');
   
     }, function(error) {
